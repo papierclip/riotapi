@@ -80,6 +80,7 @@ public class ParticipantStats {
     private long totalDamageDealtToChampions;
     private long totalDamageTaken;
 
+    private long minionsKilled;
     private long neutralMinionsKilled;
     private long neutralMinionsKilledEnemyJungle;
     private long neutralMinionsKilledTeamJungle;

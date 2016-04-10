@@ -31,14 +31,16 @@ public class PostMatchTeamOverview {
     private int baronKills;
     private int dragonKills;
     private int vilemawKills;
-    private int dominionVictoryScore;
+    private long dominionVictoryScore;
     private boolean firstBaron;
     private boolean firstBlood;
     private boolean firstDragon;
     private boolean firstInhibitor;
+    private boolean firstRiftHerald;
     private boolean firstTower;
     private int inhibitorKills;
     private int teamId;
     private int towerKills;
+    private int riftHeraldKills;
     private boolean winner;
 }

@@ -20,6 +20,7 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
+import net.boreeas.riotapi.constants.LeagueTier;
 
 /**
  * @author Malte Schütze
@@ -27,6 +28,7 @@ import java.util.List;
 @Getter
 public class Participant {
     private int championId;
+    private LeagueTier highestAchievedSeasonTier;
     private int participantId;
     private int spell1Id;
     private int spell2Id;
@@ -39,5 +41,5 @@ public class Participant {
     /**
      * Only contains id and rank
      */
-    private List<Mastery> masteries = new ArrayList<>();
+    private List<ParticipantMastery> masteries = new ArrayList<>();
 }

@@ -29,7 +29,7 @@ import java.util.List;
 @EqualsAndHashCode(of = {"id"})
 public class Mastery {
     private List<String> description = new ArrayList<>();
-    private long id;
+    private int id;
     private long ranks;
     private Image image;
     private String name;

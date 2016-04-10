@@ -696,7 +696,7 @@ public class ApiHandler implements LoLRestApi {
      * @see <a href=https://developer.riotgames.com/api/methods#!/649/2172>Official API documentation</a>
      */
     public RuneList getRuneList() {
-        WebTarget tgt = staticDataTarget.path("runes");
+        WebTarget tgt = staticDataTarget.path("rune");
         return gson.fromJson($(tgt), RuneList.class);
     }
 
