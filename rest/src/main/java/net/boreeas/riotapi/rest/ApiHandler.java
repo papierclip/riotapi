@@ -1138,6 +1138,17 @@ public class ApiHandler implements LoLRestApi {
 
         return gson.fromJson($(tgt), PlayerHistory.class).matches;
     }
+    
+    public List<MatchSummary> getMatchHistory(long playerId, String[] championIds, QueueType[] queueTypes, long beginTime) {
+        String rankedQueues = concatRankedQueues(queueTypes);
+
+        WebTarget tgt = matchHistoryInfoTarget.path("" + playerId)
+                .queryParam("championIds", concat(championIds))
+                .queryParam("rankedQueues", rankedQueues)
+                .queryParam("beginTime", beginTime);
+
+        return gson.fromJson($(tgt), PlayerHistory.class).matches;
+    }
 
 
     /**

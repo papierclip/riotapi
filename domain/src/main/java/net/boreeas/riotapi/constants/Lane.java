@@ -23,4 +23,10 @@ public enum Lane {
     TOP_LANE,
     MIDDLE_LANE,
     BOT_LANE,
+    MID,
+    MIDDLE,
+    TOP,
+    JUNGLE,
+    BOT,
+    BOTTOM
 }

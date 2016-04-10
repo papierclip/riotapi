@@ -20,7 +20,9 @@ import junit.framework.TestCase;
 import net.boreeas.riotapi.Shard;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import org.junit.Ignore;
 
+@Ignore
 public class InProgressGameTest extends TestCase {
     private static SpectatorApiHandler handler = new SpectatorApiHandler(Shard.EUW);
     private InProgressGame game = handler.openFeaturedGame(handler.getFeaturedGames().get(0));

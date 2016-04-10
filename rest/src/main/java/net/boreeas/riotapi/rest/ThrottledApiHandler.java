@@ -1014,6 +1014,10 @@ public class ThrottledApiHandler implements AutoCloseable, LoLRestApi {
     public Future<List<MatchSummary>> getMatchHistory(long playerId, String[] championIds, QueueType... queueTypes) {
         return new ApiFuture<>(() -> handler.getMatchHistory(playerId, championIds, queueTypes));
     }
+    
+    public Future<List<MatchSummary>> getMatchHistory(long playerId, String[] championIds, QueueType[] queueTypes, long startTime) {
+        return new ApiFuture<>(() -> handler.getMatchHistory(playerId, championIds, queueTypes, startTime));
+    }
 
     /**
      * Retrieve a player's match history, filtering out all games not in the specified queues.

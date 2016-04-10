@@ -32,10 +32,12 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
+import org.junit.Ignore;
 
 /**
  * Created on 4/12/2014.
  */
+@Ignore
 public class ApiHandlerTest extends TestCase {
 
     static final Properties properties = new Properties();
@@ -64,11 +66,13 @@ public class ApiHandlerTest extends TestCase {
 
     private ThrottledApiHandler handler;
 
+    @Override
     public void setUp() throws Exception {
         super.setUp();
         handler = ThrottledApiHandler.developmentDefault(Shard.EUW, API_KEY);
     }
 
+    @Ignore
     public void testGetBasicChampData() throws Exception {
         try {
             List<BasicChampData> euwBasicChampDatas = handler.getBasicChampData().get(1, MINUTES);
@@ -127,6 +131,7 @@ public class ApiHandlerTest extends TestCase {
         }
     }
 
+    @Ignore
     public void testGetLeaguesByTeam() throws Exception {
         try {
             handler.getLeagues(TEAM_ID).get(1, MINUTES);
@@ -136,6 +141,7 @@ public class ApiHandlerTest extends TestCase {
         }
     }
 
+    @Ignore
     public void testGetLeagueEntriesByTeam() throws Exception {
         try {
             handler.getLeagueEntries(TEAM_ID).get(1, MINUTES);
@@ -145,6 +151,7 @@ public class ApiHandlerTest extends TestCase {
         }
     }
 
+    @Ignore
     public void testGetChallenger() throws Exception {
         try {
             handler.getChallenger(QueueType.RANKED_SOLO_5x5).get(1, MINUTES);

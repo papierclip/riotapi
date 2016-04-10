@@ -21,7 +21,7 @@ package net.boreeas.riotapi.constants;
  */
 public enum Role {
     DUO,
-    NONO,
+    NONE,
     SOLO,
     DUO_CARRY,
     DUO_SUPPORT

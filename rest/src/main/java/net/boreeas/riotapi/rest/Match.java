@@ -25,6 +25,8 @@ import net.boreeas.riotapi.constants.Season;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import net.boreeas.riotapi.constants.Lane;
+import net.boreeas.riotapi.constants.Role;
 
 /**
  * @author Malte Schütze
@@ -41,7 +43,11 @@ public class Match {
     private String region;
     private GameMode matchMode;
     private GameType matchType;
-    private QueueType queueType;
+    private QueueType queue;
     private String platformId;
     private Season season;
+    private Role role;
+    private Lane lane;
+    private int champion;
+    private Long timestamp;
 }

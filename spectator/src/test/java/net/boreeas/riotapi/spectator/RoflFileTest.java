@@ -21,7 +21,9 @@ import net.boreeas.riotapi.Util;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
+import org.junit.Ignore;
 
+@Ignore
 public class RoflFileTest extends TestCase {
 
     private RoflFile file;

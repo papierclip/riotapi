@@ -41,8 +41,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
+import org.junit.Ignore;
 
 @Log4j
+@Ignore
 public class RtmpClientTest extends TestCase {
 
     private static Properties testConfig = new Properties();;

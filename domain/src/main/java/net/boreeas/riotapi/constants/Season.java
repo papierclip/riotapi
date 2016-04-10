@@ -25,7 +25,9 @@ public enum Season {
     PRESEASON2014(4),
     SEASON2014(4),
     PREASEASON2015(5),
-    SEASON2015(5);
+    SEASON2015(5),
+    PRESEASON2016(6),
+    SEASON2016(6);
 
     public final int numeric;
 

@@ -26,7 +26,9 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.junit.Ignore;
 
+@Ignore
 public class LoginQueueTest extends TestCase {
 
     public void testGetAuthKeyInvalidCredentials() throws Exception {
